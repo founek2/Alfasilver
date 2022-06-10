@@ -1,0 +1,11 @@
+-var section = $i18n.pages.alfasilver
+div.container.row
+    div.m-col-6.img--container
+        img(src=section.image alt="Zdravotnický prostředek")
+        p.text-center Zdravotnický prostředek
+    div.m-col-6
+        h4 <b>#{section.subheader}</b> #{section.header}
+h2= section.subheader2
+each text in section.descriptions
+    p= text
+h5.font-weight-bold !{section.subheader}. !{section.subheader2}.

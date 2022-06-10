@@ -4,13 +4,19 @@ $blue100: #00B3EE;
 $blue200: #4F99D6;
 $blue300: #0090CF;
 $red100: #D1301C;
+$grey10: #EBEBEB;
 $grey50: #F5F5F5;
-$grey100: #A8ABAF;
-$grey200: #7B7B7B;
-$grey300: #6E6E6E;
-$grey400: #606060;
-$sidePadding: 1rem;
-$topPadding: 2rem;
+$grey200: #A8ABAF;
+$grey300: #9B9B9B;
+$grey400: #7B7B7B;
+$grey500: #6E6E6E;
+$grey600: #606060;
+
+$sidePadding: 2.3rem;
+$bottomPadding: 3rem;
+$topPadding: 3.3rem;
+
+$innerPadding: 2rem;
 /* GENERAL */
 html, body {
   font-family: "Mulish", "Lucida Grande", Tahoma, Sans-Serif;
@@ -18,4 +24,200 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+}
+
+.logo{
+  width: 6.6em;
+  height: 7.2em;
+  padding: 0.9em;
+  // background-image: url("../images/logo2.png");
+  display: flex;
+  align-items: flex-end;
+  background-color: white;
+}
+
+
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.m-col-6{
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px){
+  p {
+    font-size: 14px;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+  .mobile-only {
+    display: none;
+  }
+} 
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.nopadding-bottom {
+  padding-bottom: 0 !important;
+}
+.nopadding-top {
+  padding-top: 0 !important;
+}
+
+.container--margin {
+  padding-left: $sidePadding;
+  padding-right: $sidePadding;
+  padding-bottom: $bottomPadding;
+  padding-top: $topPadding;
+}
+.color-blue200 {
+  color: $blue200;
+}
+
+.introduction--container {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/bike2.png");
+  // background-image: url("../images/bike2.png");
+  background-size: cover;
+  color: white;
+  height: 36em;
+
+  .header {
+    padding-top: 7.2em;
+  }
+  h1 { 
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+  }
+ 
+  .slider {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.9em 1.3em 0.7em 1.3em;
+    font-size: 20px;
+    background-color: $red100;
+  }
+}
+
+.alfasilver--container {
+  .container {
+    img {
+      height: 20em;
+      margin-top: -10em;
+    }
+    p {
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+
+  h4 {
+    margin-top: 1.8em;
+    padding-left: $sidePadding / 2;
+    color: $grey300;
+    b {
+      color: black;
+    }
+  }
+
+  h2 {
+    margin-top: 2.8rem;
+    font-weight: bold;
+  }
+}
+
+.wounds--container {
+  // background-color: $blue200;
+  background: transparent radial-gradient(closest-side at 50% 0%, $blue100 0%,  $blue200 100%) 0% 0% no-repeat padding-box;;
+  color: white
+}
+
+.grid--wounds  {
+  .m-badge {
+    background-color: white;
+    img {
+        color: $red100;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.grid-wounds {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 0.7rem;
+}
+
+.grid-wounds > div::before {
+  content: "";
+  padding-bottom: 20%;
+  display: block;
+}
+
+.grid-wounds > div::after {
+  content: "";
+  padding-bottom: 10%;
+  display: block;
+}
+
+.grid--wounds {
+  color: black
+}
+
+
+.grid-properties {
+  display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
+  grid-gap: 0.7rem;
+
+  div {
+    background-color: $grey10;
+    padding: $innerPadding;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.partners-img--container {
+  display: flex;
+  // flex-direction: row;
+  flex-wrap: wrap;
+
+  &> div {
+    flex: 50%;
+  }
 }
