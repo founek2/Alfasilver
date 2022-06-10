@@ -1,0 +1,8 @@
+- var section = $i18n.pages.introduction
+h3= section.subheader
+h1
+    span(class="header")= section.header
+    span(class="companyName" onclick="clickArrow()")= $i18n.companyName
+    span.underline
+p !{section.description}
+a.link(href=section.link.href)= section.link.label

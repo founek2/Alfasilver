@@ -1,0 +1,21 @@
+@import "normalize";
+
+$blue100: #00B3EE;
+$blue200: #4F99D6;
+$blue300: #0090CF;
+$red100: #D1301C;
+$grey50: #F5F5F5;
+$grey100: #A8ABAF;
+$grey200: #7B7B7B;
+$grey300: #6E6E6E;
+$grey400: #606060;
+$sidePadding: 1rem;
+$topPadding: 2rem;
+/* GENERAL */
+html, body {
+  font-family: "Mulish", "Lucida Grande", Tahoma, Sans-Serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}

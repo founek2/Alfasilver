@@ -1,0 +1,29 @@
+div.aboutContainer
+    -var about = $i18n.pages.about
+    div.sideMargin
+        h2= about.header 
+    div.container
+        div.sidePadding
+            ul.squareList
+                each item in about.list
+                    li
+                        span.bold= item.header
+                        p= item.description
+            a(href=about.link.href)= about.link.label
+
+        div.sidePadding
+            div.description
+                p= about.description
+            div.partners
+                div
+                    h2= $i18n.pages.partners.header
+
+                    <div class="tech--images items3">
+                        <img src="images/nextap@2x.png" alt="Nextap" loading="lazy">
+                        <img src="images/globdata@2x.png" alt="Globdata" loading="lazy">
+                        <img src="images/tripeduca@2x.png" alt="Tripeduca" loading="lazy">
+                    </div>
+                    <div class="tech--images items2" loading="lazy">
+                        <img src="images/studentgate@2x.png" alt="Student Gate" loading="lazy">
+                        <img src="images/uhk@2x.png" alt="Univerzita Hradec Králové" loading="lazy">
+                    </div>

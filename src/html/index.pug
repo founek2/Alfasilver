@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang= $i18n.language.current.lang)
+    title #{$i18n.title}
+    <link href='https://fonts.googleapis.com/css?family=Mulish:400,700,900' rel='stylesheet'>
+    link(href="css/general.css" rel="stylesheet")
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mCoreCode je společnost zákládající si na nejnovějších trendech ve světě IT. Nabízí vývoj mobilních aplikací,&nbsp;tvorbu webů a&nbsp;další služby v&nbsp;této oblasti.">
+    <link rel="icon apple-touch-ico" type="image/png" href="images/favicon.png"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    script(type="text/javascript").
+
+        window.onload = function () {
+          
+        }
+    <meta charset="UTF-8">
+body
+    div.header
+        header
+            div(class="logo")
+                a(href="/")
+                    img(src="images/logo@2x.png" alt="company logo")
+
+            div.language--container
+                div(class="language")
+                    div.back--container
+                        div.top-left
+                        div.top-right
+                        div.bottom-left
+                        div.bottom-right
+                    div.container
+                        span= $i18n.language.current.label
+                        <img src="images/arrowGreen.svg" alt="Arrow">
+                    ul
+                        each lang in $i18n.language.other
+                            li
+                                a(href=lang.href)= lang.label
+            nav
+                ul
+                    each val in $i18n.navigation
+                        li.raise
+                            a(href=val.href)= val.label
+    main
+        div.introduction--container
+        article(id="introduction").introduction--container
+            div.background
+            div.sideMargin.topPadding
+                include _introduction.pug
+            div#scroll-down-animation
+                span.mouse
+                    span.move
+                //- h2 Scroll down
+
+        div.scrollOver
+            article(id="work")
+                div.topPadding
+                    include _work.pug
+            article(id="about")
+                div.topPadding
+                    include _about.pug
+
+    //- div.scrollOver
+    footer(class="contact")
+        div.background
+            div.container
+                include _contact.pug
+            div.sideMargin.copyRight
+                small= "© 2014-2020 " + $i18n.pages.billing.companyName

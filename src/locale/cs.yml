@@ -1,0 +1,115 @@
+title: 'Alfasilver sprej na rány a odřeniny'
+navigation:
+    - label: Na každý pád
+      href: '#instroduction'
+    - label: Sprej na rány
+      href: '#woundSpray'
+    - label: Proč to mít po ruce
+      href: '#whyHaveAround'
+    - label: Návod k použití
+      href: '#instructions'
+    - label: Kde koupit
+      href: '#partners'
+    - label: Kontakt
+      href: '#contact'
+pages:
+    introduction:
+        header: Aby pády dobře dopadly
+        properties:
+            - Nepálí
+            - Neštípe
+            - Kryje rány
+            - Chrání před infekcí
+    alfasilver:
+        header: Alfasilver sprej na rány a odřeniny
+        subheader: Alfasilver. Na každý pád
+        description: Co si budeme povídat. Pády k životu patří. Předchází většině našich zranění. Odřeninám, šrámům, popáleninám i ranám. Padáme při běhu, chůzi, při jízdě na kole, koloběžce, tříkolce, skatu nebo na inline bruslích. Padáme všichni bez rozdílu. Šikovní, nešikové, malí i velcí.<br> Pády ale nemusí nutně končit v bolestech a v slzách.<br> Pokud máme po ruce sprej Alfasilver, dopadne každý pád dobře.
+        image: alfasilverDouble.png
+    wounds:
+        header: Sprej na rány
+        description: Bezbolestné ošetření akutních a chronických ran. ALFASILVER obsahuje ionizované stříbro, které díky antimikrobiálním účinkům zbavuje ránu infekce a minerální prášek zeolit, který má mírné hemostatické účinky a dokáže zastavit krvácení z rány.
+        badges:
+            - image: star.svg
+              label: Na odřeniny
+            - image: fire.svg
+              label: Na popáleniny
+            - image: knife.svg
+              label: Na řezné rány
+            - image: target.svg
+              label: Na chronické rány
+    haveAround:
+        header: Proč mít po ruce
+        image:
+            - file: alfasilverDouble.png
+              description: Zdravotnický prostředek
+        hints:
+            - header: NEPÁLÍ A NEŠTÍPE
+              description: Osušte slzičky. Ošetření Alfasilverem nebolí. Aplikace je mírně chladivá.
+            - header: CHRÁNÍ PŘED INFEKCÍ
+              description: Co rychle přišlo, rychle odejde. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.
+            - header: URYCHLUJE HOJENÍ
+              description: Nečekejte do svatby. Chladivý sprej vytváří antiseptické a vlhké prostředí pro rychlejší hojení.
+            - header: MŮŽE NAHRADIT NÁPLAST
+              description: Na co náplasti nebo obvaz?! Mikronizovaný zeolitový prášek přilne k ráně a vytvoří na ni ochrannou vrstvu.
+
+    instructions:
+        header: Jak postupovat při ošetření rány
+        instructions:
+            - header: Akutní rány
+              subheader: ODŘENINY, POPÁLENINY, ŠKRÁBANCE A ŘEZNÉ RÁNY
+              description: Před ošetřením ránu očistěte od viditelných nečistot (vodou nebo fyziologickým roztokem).<br> Sprej řádně protřepejte. Na ránu nastříkejte souvislou vrstvu prášku ze vzdálenosti 20 – 30 cm.<br> Na ráně zůstane prodyšná vrstva bílého prášku, který přilne na vlhké části rány a chrání ji před množením bakterií. Na suchém okolí prášek nepřilne a je možné jej snadno odstranit.<br> Drobné, nekrvácivé rány již není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
+              image: bike2.png
+            - header: Chronické rány
+              subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
+              description: TODO fancy popis
+              image: bike1.png
+    FAQ:
+        header: Na co se NEJČASTĚJI ptáte
+        questions:
+            - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK na ráně?
+              answer: Ne. Ionty stříbra jsou navázány na zeolitový prášek, který chrání stříbro před oxidací. K zabarvení prášku může dojít vlivem absorpce tekutin přijatých z rány.
+            - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
+              answer:
+            - header: MOHU POUŽÍT DOHROMADY S JINOU DESINFEKCÍ?
+              answer:
+            - header: OD JAKÉHO VĚKU JE MOŽNÉ PŘÍPRAVEK POUŽÍVAT?
+              answer:
+            - header: JAK DLOUHO LZE PŘÍPRAVEK UŽÍVAT?
+              answer:
+    partners:
+      header: Kde koupit
+      partners:
+        - image: pilulkacz.png
+          link: TODO
+        - image: drmax.png
+          link: TODO
+        - image:mojelekarna.png
+          link: TODO
+        - image:  benu.png
+          link: TODO
+        - image: alphega.png
+          link: TODO
+        - image: magistra.png
+          link: TODO
+        - image: lekarnacz.png
+          link: TODO
+    contact:
+      header: Kontakty
+      description: Alfasilver je zdravotnický prostředek určený k ošetření ran, odřenin, popálenin menšího rozsahu, kožních poranění. Pečlivě prostudujte návod k použití, účinky a způsob použití konzultujte s lékařem nebo lékárníkem.
+      aboutUs:
+        company: Glenmark Pharmaceuticals Distribution, s. r. o.
+        place: City Tower (3. podlaží)
+        address: Hvězdova 1716/2b, 140 78, Praha 4
+        phone: +420 227 629 511 
+        email: czech.info@glenmarkpharma.com 
+        website: www.glenmarkpharma.cz
+      contactUs:
+        description: V případě hlášení nežádoucích účinků zdravotnického prostředku ALFASILVER nás neváhejte, prosím, kontaktovat
+        phone:  +420 227 629 511 
+        email: czech.pvg@glenmarkpharma.com
+        privacy:
+          label: Zásady ochrany osobních údajů
+          link: TODO
+
+
+

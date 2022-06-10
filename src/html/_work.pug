@@ -1,0 +1,95 @@
+
+div.sidePadding
+    h2= $i18n.pages.work.header
+-var webApps = $i18n.pages.work.sections.webApps
+div.sideMargin.webApps
+    section
+        h3= webApps.header
+        p !{webApps.description}
+        ul.squareList
+            each val in webApps.list
+                li= val
+        a.link(href=webApps.link.href)= webApps.link.label
+    section(class="technologies")
+        -var technologies = webApps.technologies
+        h3= technologies.header
+        div.techContainer--images
+            <div class="tech--images items5">
+                <img src="images/react@2x.png" alt="React">
+                <img src="images/vue@2x.png" alt="Vue">
+                <img src="images/spring@2x.png" alt="Spring">
+                <img src="images/nodejs@2x.png" alt="NodeJS">
+                <img src="images/scala@2x.png" alt="Scala">
+            </div>
+            <div class="tech--images items3">
+                <img src="images/serverless@2x.png" alt="Serverless">
+                <img src="images/vaadin@2x.png" alt="Vaadin">
+                <img src="images/jamstack@2x.png" alt="JamStack">
+            </div>
+
+
+
+section.products--wrapper
+    div.products--background
+    div.swiper-container
+        -var products = webApps.products
+        div.products-wrapper.swiper-wrapper
+            each product in products
+                div.swiper-slide.product-slide
+                    img(src=product.image.src alt=product.image.alt)
+                    a(href=product.link)
+                        h3
+                            = product.label
+                            span.underline
+                    p !{product.description}
+        div.arrows
+            div.arrow.arrow--left#product--left
+                img(src="images/arrowWhite.svg" alt="left arrow")
+            div.arrow.arrow--right#product--right
+                img(src="images/arrowWhite.svg" alt="right arrow")
+
+-var mobileApps = $i18n.pages.work.sections.mobileApps
+div.mobileApps.sideMargin
+    div.container
+        section.mobilAppsSection
+            h3= mobileApps.header
+            p !{mobileApps.description}
+            a.link(href=webApps.link.href)= webApps.link.label
+        section(class="technologies")
+            -var technologies = mobileApps.technologies
+            h3= technologies.header
+            div.techContainer--images
+                <div class="tech--images items3">
+                    <img src="images/flutter@2x.png" alt="Flutter">
+                    <img src="images/android@2x.png" alt="Android">
+                    <img src="images/ios@2x.png" alt="iOS">
+                </div>
+                <div class="tech--images items4">
+                    <img src="images/bloc@2x.png" alt="Bloc">
+                    <img src="images/firebase@2x.png" alt="Firebase">
+                    <img src="images/googleplay@2x.png" alt="Google play">
+                    <img src="images/appstore@2x.png" alt="App store">
+                </div>
+    //- -var products = mobileApps.products
+
+    div.phone--container
+        div.arrows.arrowsMobile
+            div.arrow.arrow--left#product-mobile--left
+                img(src="images/arrowGreen.svg" alt="left arrow")
+            div.arrow.arrow--right#product-mobile--right
+                img(src="images/arrowGreen.svg" alt="right arrow")
+        div.iphones--container
+            //div.iphones
+            //    div.iphone
+            //        div.spacing
+            //            each product in mobileApps.products
+            //                video(autoplay loop muted)
+            //                    source(src=product.video.src alt=product.video.alt type="video/mp4")
+            //                img(src="images/mobile-mask@2x.png" alt="Iphone app product")
+            div.iphones
+                div.iphone.swiper-container-mobile
+                    div.spacing.swiper-wrapper
+                        each product in mobileApps.products
+                            video(autoplay loop muted).swiper-slide
+                                source(src=product.video.src alt=product.video.alt type="video/mp4")
+                    img(src="images/mobile-mask@2x.png" alt="Iphone app product")
