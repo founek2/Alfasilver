@@ -43,13 +43,16 @@ html(lang="cs")
                 return function(e) {
                     const wasActive = this.classList.contains("active")
                 
-                    for (let f of items) {
-                        f.classList.remove("active")
-                    }
+                    //- for (let f of items) {
+                    //-     f.classList.remove("active")
+                    //- }
                     if (!wasActive) {
                         this.classList.add("active")
                         if (cb) cb(this)
-                }
+                    }
+                    if (wasActive) {
+                        this.classList.remove("active")
+                    }
                 }
             }
 
