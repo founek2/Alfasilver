@@ -15,11 +15,11 @@ $grey600: #606060;
 $sidePadding: 2.3rem;
 $bottomPadding: 3rem;
 $topPadding: 3.3rem;
-
+ 
 $innerPadding: 2rem;
-/* GENERAL */
+/* GENERAL */ 
 html, body {
-  font-family: "Mulish", "Lucida Grande", Tahoma, Sans-Serif;
+  font-family: "DIN Pro", "Lucida Grande", Tahoma, Sans-Serif;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -27,9 +27,9 @@ html, body {
 }
 
 .logo{
-  width: 6.6em;
-  height: 7.2em;
-  padding: 0.9em;
+  width: 6.6rem;
+  height: 7.2rem;
+  padding: 0.9rem;
   // background-image: url("../images/logo2.png");
   display: flex;
   align-items: flex-end;
@@ -38,36 +38,72 @@ html, body {
 
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: normal;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.3rem; 
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: medium;
+}
+
+address {
+  margin: 0;
 }
 
 .m-col-6{
   width: 50%;
 }
 
+.slider {
+  width: 263px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.9rem 1.3rem 0.7rem 1.3rem;
+  // padding: 0.9em 0 0.7em 0;
+  font-size: 20px;
+  background-color: $red100;
+
+  &>div {
+    width: 100%;
+    text-align: center;
+    // position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s linear;
+  }
+  
+  .hidden {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 1024px){
-  p {
+  p, address {
     font-size: 14px;
   }
   .desktop-only {
@@ -76,7 +112,7 @@ h5 {
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
   .mobile-only {
     display: none;
   }
@@ -91,6 +127,16 @@ h5 {
 }
 .nopadding-top {
   padding-top: 0 !important;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 1.5rem;
+}
+.margin-bottom-16 {
+  margin-bottom: 1rem;
+}
+.margin-bottom-14 {
+  margin-bottom: 0.9rem;
 }
 
 .container--margin {
@@ -117,27 +163,18 @@ h5 {
     margin-top: 0.2em;
     margin-bottom: 0.3em;
   }
- 
-  .slider {
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 0.9em 1.3em 0.7em 1.3em;
-    font-size: 20px;
-    background-color: $red100;
-  }
 }
 
 .alfasilver--container {
-  .container {
     img {
       height: 20em;
       margin-top: -10em;
     }
-    p {
+    .img-label {
       font-size: 10px;
       margin: 0;
     }
-  }
+  
 
   h4 {
     margin-top: 1.8em;
@@ -163,8 +200,8 @@ h5 {
 .grid--wounds  {
   .m-badge {
     background-color: white;
-    img {
-        color: $red100;
+    svg {
+        fill: $red100;
     }
   }
 
@@ -199,25 +236,197 @@ h5 {
 
 
 .grid-properties {
-  display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
-  grid-gap: 0.7rem;
+  display: flex;
 
-  div {
+  // grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
+  flex-direction: column;
+
+  .property { 
+    position: relative;
     background-color: $grey10;
     padding: $innerPadding;
+    margin-bottom: 0.7rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
   }
+
+  .property--arrow:before {
+    content: "\A";
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    transform: rotate(-90deg);
+    border-color: transparent black transparent transparent;
+    position: absolute;
+    top: $innerPadding + 0.4;
+    right: $innerPadding / 2;
+    
+  }
+
   p {
     margin: 0;
+    display: none;
+  }
+
+  .active {
+    background-color: $blue200;
+    color: white;
+    &:before {
+      transform: rotate(90deg);
+    }
+    p {
+      display: block;
+    }
+  }
+}
+.grid-properties--active {
+  p {
+    display: block;
   }
 }
 
 .partners-img--container {
   display: flex;
-  // flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  
 
-  &> div {
-    flex: 50%;
+  // &> div {
+  //   flex: 50%;
+  // }
+}
+.partner--container {
+  max-width: 226px;
+  // width: 50%;
+}
+@media screen and (min-width: 330px){
+  .partner--container {
+    width: 50%;
   }
 }
+
+.image-instructions {
+  margin-bottom: 0.7rem;
+  img {
+    width: 100%;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: $grey600;
+  color: white;
+  position: relative;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  p {
+    margin: 0;
+  }
+
+  .logo {
+    position: absolute;
+    // margin-top: -1px;
+    margin-left: $sidePadding;
+    width: 4.1rem;
+    height: 4.5rem;
+    padding: 0.7em;
+  }
+
+  .contacts--container > div:first-child{
+      margin-top: 3em;
+      margin-bottom: 3em;
+  }
+}
+
+.alwaysOn {
+  font-size: 0.5rem;
+  position: fixed;
+  background-color: $grey50;
+  color: $grey500;
+  top: 75vh;
+  right: 0;
+
+  padding: 1rem;
+  width: 12.3rem;
+  
+}
+
+// -------------------- DESKTOP ------------------- //
+nav {
+  margin-right: -4rem;
+  ul {
+    padding-inline-start: 0px;
+    margin-top: 1.4rem;
+  
+
+  li {
+    display: inline-block;
+    margin-top: 1rem;
+
+
+    a {
+      color: white;
+      padding: 1rem 1rem 1rem 1rem;
+      font-size: 1.1rem;
+      // font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+$sidePadding: $sidePadding *2;
+
+@media screen and (min-width: 1025px){
+  .container--margin {
+    padding-left: $sidePadding;
+    padding-right: $sidePadding;
+  }
+} 
+
+$sidePadding: $sidePadding * 2;
+
+@media screen and (min-width: 1355px){
+  .container--margin {
+    padding-left: $sidePadding;
+    padding-right: $sidePadding;
+  }
+
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem; 
+  }
+
+  p, address {
+    font-size: 1rem;
+  }
+}
+
+$sidePadding: $sidePadding *2;
+
+@media screen and (min-width: 1500px){
+  .container--margin {
+    padding-left: $sidePadding;
+    padding-right: $sidePadding;
+  }
+} 

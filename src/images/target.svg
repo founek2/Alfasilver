@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.48" height="59.48" viewBox="0 0 59.48 59.48">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_43" data-name="Rectangle 43" width="59.48" height="59.48" transform="translate(0 0)" fill="#a8abaf"/>
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="59.48" height="59.48" transform="translate(0 0)"/>
     </clipPath>
   </defs>
   <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
     <g id="Group_12" data-name="Group 12" clip-path="url(#clip-path)">
-      <path id="Path_2" data-name="Path 2" d="M38.577,29.74A8.837,8.837,0,1,1,29.741,20.9a8.836,8.836,0,0,1,8.836,8.836" fill="#a8abaf"/>
-      <path id="Path_3" data-name="Path 3" d="M29.74,59.48A29.74,29.74,0,1,1,59.48,29.74,29.774,29.774,0,0,1,29.74,59.48M29.74,4A25.74,25.74,0,1,0,55.48,29.74,25.769,25.769,0,0,0,29.74,4" fill="#a8abaf"/>
-      <path id="Path_4" data-name="Path 4" d="M29.74,49.15A19.41,19.41,0,1,1,49.15,29.74,19.432,19.432,0,0,1,29.74,49.15m0-34.82A15.41,15.41,0,1,0,45.15,29.74,15.428,15.428,0,0,0,29.74,14.33" fill="#a8abaf"/>
+      <path id="Path_2" data-name="Path 2" d="M38.577,29.74A8.837,8.837,0,1,1,29.741,20.9a8.836,8.836,0,0,1,8.836,8.836" />
+      <path id="Path_3" data-name="Path 3" d="M29.74,59.48A29.74,29.74,0,1,1,59.48,29.74,29.774,29.774,0,0,1,29.74,59.48M29.74,4A25.74,25.74,0,1,0,55.48,29.74,25.769,25.769,0,0,0,29.74,4"/>
+      <path id="Path_4" data-name="Path 4" d="M29.74,49.15A19.41,19.41,0,1,1,49.15,29.74,19.432,19.432,0,0,1,29.74,49.15m0-34.82A15.41,15.41,0,1,0,45.15,29.74,15.428,15.428,0,0,0,29.74,14.33"/>
     </g>
   </g>
 </svg>

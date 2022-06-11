@@ -1,17 +1,18 @@
-title: "Alfasilver sprej na rány a odřeniny"
+title: 'Alfasilver sprej na rány a odřeniny'
 navigation:
     - label: Na každý pád
-      href: "#instroduction"
+      href: '#instroduction'
     - label: Sprej na rány
-      href: "#woundSpray"
-    - label: Proč to mít po ruce
-      href: "#properties"
+      href: '#woundSpray'
+    - label: Proč mít po ruce
+      href: '#properties'
     - label: Návod k použití
-      href: "#instructions"
+      href: '#instructions'
     - label: Kde koupit
-      href: "#partners"
+      href: '#partners'
     - label: Kontakt
-      href: "#contact"
+      href: '#contact'
+alwaysOn: Alfasilver je zdravotnický prostředek určený k&nbsp;ošetření ran, odřenin, popálenin menšího rozsahu, kožních poranění. Pečlivě prostudujte návod k použití, účinky a způsob použití konzultujte s lékařem nebo lékárníkem.
 pages:
     introduction:
         header: Aby pády dobře
@@ -71,39 +72,40 @@ pages:
             - header: Chronické rány
               subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
               description: TODO fancy popis
-              image: images/bike1.png
+              image: images/bike.png
     faq:
         header: Na co se NEJČASTĚJI ptáte
         questions:
             - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK na ráně?
               answer: Ne. Ionty stříbra jsou navázány na zeolitový prášek, který chrání stříbro před oxidací. K zabarvení prášku může dojít vlivem absorpce tekutin přijatých z rány.
             - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
-              answer:
+              answer: TODO
             - header: MOHU POUŽÍT DOHROMADY S JINOU DESINFEKCÍ?
-              answer:
+              answer: TODO
             - header: OD JAKÉHO VĚKU JE MOŽNÉ PŘÍPRAVEK POUŽÍVAT?
-              answer:
+              answer: TODO
             - header: JAK DLOUHO LZE PŘÍPRAVEK UŽÍVAT?
-              answer:
+              answer: TODO
     partners:
         header: Kde koupit
         partners:
             - image: images/pilulkacz.png
-              link: TODO
+              link: '#'
             - image: images/drmax.png
-              link: TODO
+              link: '#'
             - image: images/mojelekarna.png
-              link: TODO
+              link: '#'
             - image: images/benu.png
-              link: TODO
+              link: '#'
             - image: images/alphega.png
-              link: TODO
+              link: '#'
             - image: images/magistra.png
-              link: TODO
+              link: '#'
             - image: images/lekarnacz.png
-              link: TODO
+              link: '#'
     contact:
         header: Kontakty
+        subheader: Sídlo distributora pro ČR
         description: Alfasilver je zdravotnický prostředek určený k ošetření ran, odřenin, popálenin menšího rozsahu, kožních poranění. Pečlivě prostudujte návod k použití, účinky a způsob použití konzultujte s lékařem nebo lékárníkem.
         aboutUs:
             company: Glenmark Pharmaceuticals Distribution, s. r. o.
@@ -118,4 +120,4 @@ pages:
             email: czech.pvg@glenmarkpharma.com
             privacy:
                 label: Zásady ochrany osobních údajů
-                link: TODO
+                link: '#'

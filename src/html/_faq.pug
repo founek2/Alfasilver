@@ -1,7 +1,12 @@
 -var section = $i18n.pages.faq
-h2.color-blue200.font-weight-bold= section.header
+h2.margin-bottom-24.color-blue200.font-weight-bold= section.header
 div.grid-properties
     each tip in section.questions
-        div.tip
-            h3.font-weight-bold= tip.header
-            p= tip.answer
+        if tip ==  section.questions[0]
+            div.property.property--arrow.active
+                h3.font-weight-bold= tip.header
+                p= tip.answer
+        else
+            div.property.property--arrow
+                h3.font-weight-bold= tip.header
+                p= tip.answer

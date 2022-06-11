@@ -1,20 +1,33 @@
-section.sidePadding
-    -var billing = $i18n.pages.billing
-    h2= billing.header
+-var section = $i18n.pages.contact
+div
+    p= section.description
 
-    -var addr = $i18n.pages.billing.address
-    div.paragraph--group
-        p= $i18n.pages.billing.companyName
-        p= addr.street
-        p= addr.postcode + " " + addr.city
-        p= addr.country
-    div.paragraph--group
-        each item in billing.list
-            p !{item.label + ": " + item.text}
-
-section#contact.sidePadding
-    -var contact = $i18n.pages.contact
-    h2= contact.header
-    div.paragraph--group
-        each item in contact.list
-            p !{item.label + ": " + item.text}
+div
+    h2.font-weight-bold.margin-bottom-14= section.header
+    p= section.subheader+ ":"
+    br
+    address
+        = section.aboutUs.company
+        br
+        = section.aboutUs.place
+        br
+        = section.aboutUs.address
+        br
+        = 'Tel.: '
+        a(href="tel:"+section.aboutUs.phone)= section.aboutUs.phone
+        br
+        = 'E-mail: '
+        a(href="mailto:"+section.aboutUs.email)= section.aboutUs.email
+        br
+        a(href="http://" +section.aboutUs.website)= section.aboutUs.website
+    br
+    div.contact-us
+        p= section.contactUs.description + ":"
+        br
+        = 'Tel.: '
+        a(href="tel:"+section.contactUs.phone)= section.contactUs.phone
+        br
+        a(href="tel:"+section.contactUs.email)= section.contactUs.email
+        br
+        br
+        a.underline(href=section.contactUs.privacy.link)=section.contactUs.privacy.label

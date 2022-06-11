@@ -11,8 +11,9 @@
     "license": "ISC",
     "devDependencies": {
         "gulp": "^4.0.2",
-        "gulp-pug-i18n": "^1.0.2",
         "gulp-autoprefixer": "^7.0.1",
+        "gulp-embed-svg": "^1.4.8",
+        "gulp-pug-i18n": "^1.0.2",
         "gulp-sass": "^5.1.0",
         "node-sass": "^7.0.1"
     },

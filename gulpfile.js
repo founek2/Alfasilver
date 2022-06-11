@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const embedSvg = require('gulp-embed-svg');
 
 var gulpPub = require('gulp-pug-i18n');
 var gulpSass = require('gulp-sass')(require('node-sass'));
@@ -43,6 +44,10 @@ function videos() {
     return gulp.src(['./src/videos/**/*']).pipe(gulp.dest('output/videos'));
 }
 
+function fonts() {
+    return gulp.src(['./src/fonts/**/*']).pipe(gulp.dest('output/css'));
+}
+
 function pug() {
     return gulp
         .src('./src/html/[^_]*.pug')
@@ -55,9 +60,10 @@ function pug() {
                 pretty: true, // Pug option
             })
         )
+        .pipe(embedSvg({ root: './src' }))
         .pipe(gulp.dest('output'));
 }
 
 exports.watch = gulp.parallel(sassWatch, pugWatch, imgWatch, videoWatch);
-exports.build = gulp.parallel(sass, pug, images, videos);
+exports.build = gulp.parallel(sass, pug, images, videos, fonts);
 exports.default = exports.build;

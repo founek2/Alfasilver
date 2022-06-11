@@ -1,14 +1,17 @@
 -var introduction = $i18n.pages.introduction
-div(class="logo")
-    img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
-//- nav
-//-     ul
-//-         each val in $i18n.navigation
-//-             li.raise
-//-                 a(href=val.href)= val.label
+div.header-top
+    div(class="logo")
+        img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
+    nav.desktop-only
+        ul 
+            each val in $i18n.navigation
+                li.raise
+                    a(href=val.href)= val.label
 div.header
     h2= introduction.header
     h1= introduction.header2
         
-div.slider
-    =introduction.properties[0] 
+div.slider.slider--animate
+    div= introduction.properties[0]
+    each property in introduction.properties
+        div.hidden= property

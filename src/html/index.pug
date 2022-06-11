@@ -3,13 +3,74 @@ html(lang="cs")
     title #{$i18n.title}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     meta(name="description" content="#{i18n.wounds.description}")
+    link(href="css/fonts.css" rel="stylesheet")
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     link(href="css/general.css" rel="stylesheet")
     <link rel="icon apple-touch-ico" type="image/png" href="images/favicon.png"/>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     script(type="text/javascript").
 
         window.onload = function () {
+            const slider = document.querySelector(".slider--animate")
+            const elements = slider.children
+            const holder = elements[0] 
+
+            function fadeOut(el) {
+                el.style.opacity = 0
+            }
+
+            function fadeIn(el) {
+                el.style.opacity = 1
+            }
+
+            function changeText(holder, idx) {
+                holder.innerHTML = elements[idx].innerHTML
+            }
+
+            function animate() {
+                let idx = 2
+                return () => {
+                    fadeOut(holder)
+                    setTimeout(() => {
+                        if (idx >= elements.length) idx = 1
+                        changeText(holder, idx++)
+                        fadeIn(holder)
+                    }, 800)
+                }
+            }
+            setInterval(animate(), 3000)
+
+            function handleActive(items, cb) {
+                return function(e) {
+                    const wasActive = this.classList.contains("active")
+                
+                    for (let f of items) {
+                        f.classList.remove("active")
+                    }
+                    if (!wasActive) {
+                        this.classList.add("active")
+                        if (cb) cb(this)
+                }
+                }
+            }
+
+            const faqs = document.querySelectorAll(".faq--container > .grid-properties > .property")
+            for (let f of faqs) {
+                f.addEventListener("click", handleActive(faqs))
+            }
+
+
+            const imageInstructions = document.querySelector(".image-instructions > img")
+            function changeImage(el) {
+                const imageSrc = el.getAttribute("data-image")
+                if (imageSrc) {
+                    imageInstructions.src = imageSrc
+                }
+            }
+
+            const instructions = document.querySelectorAll(".tips--container > .grid-properties > .property")
+            for (let f of instructions) {
+                f.addEventListener("click", handleActive(instructions, changeImage))
+            }
           
         } 
     <meta charset="UTF-8">
@@ -24,13 +85,18 @@ body
             include _wounds.pug
         article(id="properties").container--margin.properties--container.nopadding-bottom
             include _properties.pug
-        article(id="instructions").container--margin.instructions--container
+        article(id="instructions").container--margin.instructions--container.nopadding-bottom
             include _instructions.pug
-        article(id="faq").container--margin.faq--container
+        article(id="faq").container--margin.faq--container.nopadding-bottom
             include _faq.pug
         article(id="partners").container--margin.partners--container
             include _partners.pug
-
+        footer(id="contacts")
+            div(class="logo")
+                img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
+            div.container--margin.contacts--container
+                include _contact.pug
+    div.alwaysOn !{$i18n.alwaysOn}
 
     //- div.scrollOver
     //- footer(class="contact")

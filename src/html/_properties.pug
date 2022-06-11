@@ -1,8 +1,8 @@
 -var section = $i18n.pages.properties
-h2.font-weight-bold.color-blue200= section.header
-div.grid-properties.grid--properties
+h2.margin-bottom-24.font-weight-bold.color-blue200= section.header
+div.grid-properties.grid--properties.grid-properties--active
     each badge in section.badges
-        div 
+        div.property
             h4.font-weight-bold= badge.header
             p= badge.description
         
