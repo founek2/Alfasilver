@@ -1,11 +1,14 @@
 -var section = $i18n.pages.alfasilver
 div.d-flex
-    div.m-col-6.text-center
-        img(src=section.image alt="Zdravotnický prostředek")
-        p.img-label.text-center Zdravotnický prostředek
-    div.m-col-6
-        h4 <b>#{section.subheader}</b> #{section.header}
-h2.margin-bottom-16= section.subheader2
-each text in section.descriptions
-    p= text
-h5.font-weight-bold !{section.subheader}. !{section.subheader2}.
+    div.desktop-col-spray 
+    div.desktop-col-text
+        div.d-flex
+            div.m-col-6.text-center.mobile-only
+                img(id="static-alfasilver" src=section.image alt="Zdravotnický prostředek")
+                p.img-label.text-center Zdravotnický prostředek
+            div.m-col-6
+                h4 <b>#{section.subheader}</b> #{section.header}
+        h2.margin-bottom-16= section.subheader2
+        each text in section.descriptions
+            p= text
+        h5.font-weight-bold !{section.subheader}. !{section.subheader2}.

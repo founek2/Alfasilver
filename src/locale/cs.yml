@@ -1,9 +1,9 @@
 title: 'Alfasilver sprej na rány a odřeniny'
 navigation:
     - label: Na každý pád
-      href: '#instroduction'
+      href: '#alfasilver'
     - label: Sprej na rány
-      href: '#woundSpray'
+      href: '#wounds'
     - label: Proč mít po ruce
       href: '#properties'
     - label: Návod k použití
@@ -48,44 +48,53 @@ pages:
             - image: images/target.svg
               label: Na odřeniny
     properties:
-        header: Proč mít po ruce
+        header: Proč mít po ruce?
         image:
             - file: images/alfasilverDouble.png
               description: Zdravotnický prostředek
-        badges:
-            - header: NEPÁLÍ A NEŠTÍPE
-              description: Osušte slzičky. Ošetření Alfasilverem nebolí. Aplikace je mírně chladivá.
-            - header: CHRÁNÍ PŘED INFEKCÍ
-              description: Co rychle přišlo, rychle odejde. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.
-            - header: URYCHLUJE HOJENÍ
-              description: Nečekejte do svatby. Chladivý sprej vytváří antiseptické a vlhké prostředí pro rychlejší hojení.
-            - header: MŮŽE NAHRADIT NÁPLAST
-              description: Na co náplasti nebo obvaz?! Mikronizovaný zeolitový prášek přilne k ráně a vytvoří na ni ochrannou vrstvu.
+        columns:
+            col1:
+                - header: NEPÁLÍ A NEŠTÍPE
+                  description: Osušte slzičky. Ošetření Alfasilverem nebolí. Aplikace je mírně chladivá.
+                - header: CHRÁNÍ PŘED INFEKCÍ
+                  description: Co rychle přišlo, rychle odejde. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.
+            col2:
+                - header: URYCHLUJE HOJENÍ
+                  description: Nečekejte do svatby. Chladivý sprej vytváří antiseptické a vlhké prostředí pro rychlejší hojení.
+                - header: MŮŽE NAHRADIT NÁPLAST
+                  description: Na co náplasti nebo obvaz?! Mikronizovaný zeolitový prášek přilne k ráně a vytvoří na ni ochrannou vrstvu.
 
     instructions:
         header: Jak postupovat při&nbsp;ošetření rány
         tips:
             - header: Akutní rány
               subheader: ODŘENINY, POPÁLENINY, ŠKRÁBANCE A ŘEZNÉ RÁNY
-              description: Před ošetřením ránu očistěte od viditelných nečistot (vodou nebo fyziologickým roztokem).<br> Sprej řádně protřepejte. Na ránu nastříkejte souvislou vrstvu prášku ze vzdálenosti 20 – 30 cm.<br> Na ráně zůstane prodyšná vrstva bílého prášku, který přilne na vlhké části rány a chrání ji před množením bakterií. Na suchém okolí prášek nepřilne a je možné jej snadno odstranit.<br> Drobné, nekrvácivé rány již není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
+              descriptions:
+                  - Před ošetřením ránu očistěte od viditelných nečistot (vodou nebo fyziologickým roztokem).
+                  - Sprej řádně protřepejte. Na ránu nastříkejte souvislou vrstvu prášku ze vzdálenosti 20 – 30 cm.
+                  - Na ráně zůstane prodyšná vrstva bílého prášku, který přilne na vlhké části rány a chrání ji před množením bakterií. Na suchém okolí prášek nepřilne a je možné jej snadno odstranit.
+                  - Drobné, nekrvácivé rány již není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
               image: images/bike2.png
             - header: Chronické rány
               subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
-              description: TODO fancy popis
+              descriptions:
+                  - TODO fancy popis<br><br>
               image: images/bike.png
     faq:
         header: Na co se NEJČASTĚJI ptáte
         questions:
-            - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK na ráně?
-              answer: Ne. Ionty stříbra jsou navázány na zeolitový prášek, který chrání stříbro před oxidací. K zabarvení prášku může dojít vlivem absorpce tekutin přijatých z rány.
-            - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
-              answer: TODO
-            - header: MOHU POUŽÍT DOHROMADY S JINOU DESINFEKCÍ?
-              answer: TODO
-            - header: OD JAKÉHO VĚKU JE MOŽNÉ PŘÍPRAVEK POUŽÍVAT?
-              answer: TODO
-            - header: JAK DLOUHO LZE PŘÍPRAVEK UŽÍVAT?
-              answer: TODO
+            col1:
+                - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK na ráně?
+                  answer: Ne. Ionty stříbra jsou navázány na zeolitový prášek, který chrání stříbro před oxidací. K zabarvení prášku může dojít vlivem absorpce tekutin přijatých z rány.
+                - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
+                  answer: TODO
+            col2:
+                - header: MOHU POUŽÍT DOHROMADY S JINOU DESINFEKCÍ?
+                  answer: TODO
+                - header: OD JAKÉHO VĚKU JE MOŽNÉ PŘÍPRAVEK POUŽÍVAT?
+                  answer: TODO
+                - header: JAK DLOUHO LZE PŘÍPRAVEK UŽÍVAT?
+                  answer: TODO
     partners:
         header: Kde koupit
         partners:

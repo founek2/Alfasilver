@@ -1,10 +1,14 @@
 -var section = $i18n.pages.wounds
-h2.margin-bottom-16.font-weight-bold= section.header
-p.mobile-only= section.description.phone
-p.desktop-only= section.description.desktop
+div.d-flex
+    div.desktop-col-spray
+        img.image--wounds(src=$i18n.pages.alfasilver.image)
+    div.desktop-col-text
+        h2.margin-bottom-16.font-weight-bold= section.header
+        p.mobile-only= section.description.phone
+        p.desktop-only= section.description.desktop
 
-div.grid-wounds.grid--wounds
-    each badge in section.badges
-        div.m-badge.text-center
-            img(inline src=badge.image alt=badge.label)
-            p.font-weight-bold= badge.label  
+        div.grid-wounds.grid--wounds
+            each badge in section.badges
+                div.m-badge.text-center
+                    img(inline src=badge.image alt=badge.label)
+                    p.font-weight-bold= badge.label  

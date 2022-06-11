@@ -53,32 +53,52 @@ html(lang="cs")
                 }
             }
 
-            const faqs = document.querySelectorAll(".faq--container > .grid-properties > .property")
+            const faqs = document.querySelectorAll(".faq--container > .grid-properties  .property")
             for (let f of faqs) {
                 f.addEventListener("click", handleActive(faqs))
             }
 
 
-            const imageInstructions = document.querySelector(".image-instructions > img")
+            const imagesInstructions = document.querySelectorAll(".image-instructions > img")
             function changeImage(el) {
                 const imageSrc = el.getAttribute("data-image")
                 if (imageSrc) {
-                    imageInstructions.src = imageSrc
+                    for (let img of imagesInstructions) {
+                        img.src = imageSrc
+                    }
                 }
             }
 
-            const instructions = document.querySelectorAll(".tips--container > .grid-properties > .property")
+            const instructions = document.querySelectorAll(".instructions--container .grid-properties  .property")
             for (let f of instructions) {
                 f.addEventListener("click", handleActive(instructions, changeImage))
             }
           
+            const movableImage = document.querySelector("#movable-alfasilver")
+            const staticImage = document.querySelector(".wounds--container")
+            const offset = movableImage.offsetTop
+            const maxTop = staticImage.offsetTop - 200
+            console.log("maxTop", maxTop, staticImage.getBoundingClientRect())
+            window.onscroll = function (e) {  
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+                const target = offset +scrollTop
+                console.log(movableImage.style.top, scrollTop)
+                if (target < maxTop) {
+                movableImage.style.top = `${offset +scrollTop}px`
+                }
+
+            } 
         } 
     <meta charset="UTF-8">
 body
-    div.container--margin.introduction--container.nopadding-top
-        header
+    div.container--header
+        <video id="background-video" autoplay loop muted poster="images/bike.png">
+            <source src="videos/alfasilver-20s.mp4" type="video/mp4">
+        </video>
+        header.container--margin.introduction--container.nopadding-top
             include _introduction.pug 
     main
+
         article(id="alfasilver").container--margin.alfasilver--container
             include _alfasilver.pug
         article(id="wounds").container--margin.wounds--container
@@ -91,8 +111,8 @@ body
             include _faq.pug
         article(id="partners").container--margin.partners--container
             include _partners.pug
-        footer(id="contacts")
-            div(class="logo")
+        footer(id="contact")
+            div.logo.sidemargin--left
                 img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
             div.container--margin.contacts--container
                 include _contact.pug

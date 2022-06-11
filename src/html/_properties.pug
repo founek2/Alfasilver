@@ -1,8 +1,13 @@
 -var section = $i18n.pages.properties
-h2.margin-bottom-24.font-weight-bold.color-blue200= section.header
+h2.desktop-align-center-1024.margin-bottom-24.font-weight-bold.color-blue200= section.header
 div.grid-properties.grid--properties.grid-properties--active
-    each badge in section.badges
-        div.property
-            h4.font-weight-bold= badge.header
-            p= badge.description
+    each col, key in section.columns
+        div.desktop-col-4
+            each badge in col
+                div.property
+                    h4.font-weight-bold= badge.header
+                    p= badge.description
+        if key == "col1"
+            div.desktop-col-4.desktop-only-1024.image--properties
+                img(src=$i18n.pages.alfasilver.image)
         

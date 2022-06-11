@@ -1,12 +1,18 @@
 -var section = $i18n.pages.faq
-h2.margin-bottom-24.color-blue200.font-weight-bold= section.header
-div.grid-properties
-    each tip in section.questions
-        if tip ==  section.questions[0]
-            div.property.property--arrow.active
-                h3.font-weight-bold= tip.header
-                p= tip.answer
-        else
-            div.property.property--arrow
-                h3.font-weight-bold= tip.header
-                p= tip.answer
+h2.desktop-align-center-1024.margin-bottom-24.color-blue200.font-weight-bold= section.header
+div.grid-properties.grid--faq
+    div.col1--faq
+        each tip in section.questions.col1
+            if tip ==  section.questions.col1[0]
+                div.property.property--arrow.active
+                    h3.font-weight-bold= tip.header
+                    p= tip.answer
+            else
+                div.property.property--arrow
+                    h3.font-weight-bold= tip.header
+                    p= tip.answer
+    div
+        each tip in section.questions.col2
+                div.property.property--arrow
+                    h3.font-weight-bold= tip.header
+                    p= tip.answer

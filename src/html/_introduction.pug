@@ -2,16 +2,20 @@
 div.header-top
     div(class="logo")
         img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
-    nav.desktop-only
+    nav.desktop-only-1024
         ul 
             each val in $i18n.navigation
                 li.raise
                     a(href=val.href)= val.label
-div.header
-    h2= introduction.header
-    h1= introduction.header2
-        
-div.slider.slider--animate
-    div= introduction.properties[0]
-    each property in introduction.properties
-        div.hidden= property
+div.d-flex
+    div.desktop-col-spray.desktop-only-1024
+        img.image--wounds(id="movable-alfasilver" src=$i18n.pages.alfasilver.image)
+    div.desktop-col-text
+        div.header
+            h2= introduction.header
+            h1= introduction.header2
+                
+        div.slider.slider--animate
+            div= introduction.properties[0]
+            each property in introduction.properties
+                div.hidden= property

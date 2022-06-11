@@ -15,6 +15,7 @@ $grey600: #606060;
 $sidePadding: 2.3rem;
 $bottomPadding: 3rem;
 $topPadding: 3.3rem;
+$topPaddingMobile: 3.3rem;
  
 $innerPadding: 2rem;
 /* GENERAL */ 
@@ -26,7 +27,7 @@ html, body {
   overflow-x: hidden;
 }
 
-.logo{
+.logo {
   width: 6.6rem;
   height: 7.2rem;
   padding: 0.9rem;
@@ -106,7 +107,7 @@ address {
   p, address {
     font-size: 14px;
   }
-  .desktop-only {
+  .desktop-only-1024 {
     display: none;
   }
 }
@@ -139,6 +140,9 @@ address {
   margin-bottom: 0.9rem;
 }
 
+.sidemargin--left {
+  margin-left: $sidePadding;
+}
 .container--margin {
   padding-left: $sidePadding;
   padding-right: $sidePadding;
@@ -150,6 +154,7 @@ address {
 }
 
 .introduction--container {
+  position: relative;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/bike2.png");
   // background-image: url("../images/bike2.png");
   background-size: cover;
@@ -166,6 +171,8 @@ address {
 }
 
 .alfasilver--container {
+  position: relative;
+  background-color: white;
     img {
       height: 20em;
       margin-top: -10em;
@@ -192,6 +199,7 @@ address {
 }
 
 .wounds--container {
+  z-index: 2;
   // background-color: $blue200;
   background: transparent radial-gradient(closest-side at 50% 0%, $blue100 0%,  $blue200 100%) 0% 0% no-repeat padding-box;;
   color: white
@@ -200,9 +208,7 @@ address {
 .grid--wounds  {
   .m-badge {
     background-color: white;
-    svg {
-        fill: $red100;
-    }
+    fill: $red100;
   }
 
   p {
@@ -317,7 +323,7 @@ address {
 .underline {
   text-decoration: underline;
 }
-
+$footer-margin-top: 2.7em;
 footer {
   background-color: $grey600;
   color: white;
@@ -332,15 +338,13 @@ footer {
 
   .logo {
     position: absolute;
-    // margin-top: -1px;
-    margin-left: $sidePadding;
     width: 4.1rem;
     height: 4.5rem;
     padding: 0.7em;
   }
 
   .contacts--container > div:first-child{
-      margin-top: 3em;
+      margin-top: $footer-margin-top;
       margin-bottom: 3em;
   }
 }
@@ -358,9 +362,13 @@ footer {
   
 }
 
+.col1--faq {
+  margin-bottom: 0.7rem;
+}
+
 // -------------------- DESKTOP ------------------- //
 nav {
-  margin-right: -4rem;
+  margin-right: -1rem;
   ul {
     padding-inline-start: 0px;
     margin-top: 1.4rem;
@@ -377,31 +385,170 @@ nav {
       font-size: 1.1rem;
       // font-weight: 700;
       text-transform: uppercase;
+
+      &:hover{
+        color: $grey10;
+        text-decoration: none;
+      }
     }
   }
 }
 }
 
+.image--properties {
+  text-align: center;
+  img {
+    width: 13rem;
+  }
+}
 .header-top {
   display: flex;
   justify-content: space-between;
 }
 
 $sidePadding: $sidePadding *2;
+$topPadding: $topPadding* 1.3;
 
-@media screen and (min-width: 1025px){
+.desktop-only-1024 {
+  display: none;
+}
+#background-video {
+  display: none;
+}
+
+// 392 left header
+@media screen and (min-width: 1024px){
   .container--margin {
     padding-left: $sidePadding;
     padding-right: $sidePadding;
+    padding-top: $topPadding;
+  }
+  .sidemargin--left {
+    margin-left: $sidePadding;
+  }
+
+  #background-video {
+    display: initial;
+    width: 100vw;
+    top: 0;
+    // position: absolute;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .logo {
+    width: 8.7rem;
+    height: 9.4rem;
+    padding: 1.2rem;
+  }
+
+  .introduction--container {
+    background: none;
+  }
+  .desktop-col-spray {
+    width: 34%;
+  }
+  .desktop-col-text {
+    width: 66%;
+  }
+
+  .alfasilver--container h4 {
+    padding: 0;
+  }
+
+  .wounds--container {
+    position: relative;
+    padding-top: $topPaddingMobile !important;
+  }
+  // 196+75 = 271
+  .image--wounds {
+    z-index: 1;
+    position: absolute;
+    width: 15.5rem;
+    bottom: $bottomPadding - 0.9;
+  }
+  #movable-alfasilver {
+    top: 271px;
+  }
+
+  .grid--wounds .m-badge {
+    fill: $grey200;
+    &:hover {
+      fill: $red100;
+    }
+  }
+
+  .desktop-only-1024{
+    display: block;
+  }
+  .desktop-col-4 {
+    width: 33.33%;
+  }
+
+  .grid--properties {
+    flex-direction: row;
+
+    .property {
+      max-width: 17.5rem;
+      background-color: $grey50;
+    }
+    .desktop-col-4:last-child .property{
+      float: right;
+    }
+  }
+
+  .grid--faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .desktop-align-center-1024 {
+    text-align: center;
+  }
+
+  footer .logo {
+    width: 4.7rem;
+    height: 5.2rem;
+  }
+
+  .contacts--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .contacts--container > div:last-child{
+    margin-top: $footer-margin-top;
+  }
+
+  .tips--container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 } 
 
-$sidePadding: $sidePadding * 2;
 
+
+@media screen and (max-width: 1354px){
+  .desktop-only-1355 {
+    display: none;
+  }
+}
+
+
+$sidePadding: $sidePadding * 2;
+$topPadding: $topPadding* 1.2;
 @media screen and (min-width: 1355px){
   .container--margin {
     padding-left: $sidePadding;
     padding-right: $sidePadding;
+    padding-top: $topPadding;
+  }
+
+  .sidemargin--left {
+    margin-left: $sidePadding;
   }
 
 
@@ -420,13 +567,22 @@ $sidePadding: $sidePadding * 2;
   p, address {
     font-size: 1rem;
   }
+
+  .desktop-align-center {
+    text-align: center;
+  }
+
 }
 
-$sidePadding: $sidePadding *2;
-
+$sidePadding: $sidePadding *1.5;
+$topPadding: $topPadding *1.2;
 @media screen and (min-width: 1500px){
   .container--margin {
     padding-left: $sidePadding;
     padding-right: $sidePadding;
+    padding-top: $topPadding;
+  }
+  .sidemargin--left {
+    margin-left: $sidePadding;
   }
 } 
