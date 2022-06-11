@@ -1,8 +1,14 @@
-- var section = $i18n.pages.introduction
-h3= section.subheader
-h1
-    span(class="header")= section.header
-    span(class="companyName" onclick="clickArrow()")= $i18n.companyName
-    span.underline
-p !{section.description}
-a.link(href=section.link.href)= section.link.label
+-var introduction = $i18n.pages.introduction
+div(class="logo")
+    img(src="images/logo2.png" alt="Alfasilver logo" class="img-fluid")
+//- nav
+//-     ul
+//-         each val in $i18n.navigation
+//-             li.raise
+//-                 a(href=val.href)= val.label
+div.header
+    h2= introduction.header
+    h1= introduction.header2
+        
+div.slider
+    =introduction.properties[0] 

@@ -1,0 +1,11 @@
+-var section = $i18n.pages.instructions
+h2.font-weight-bold.color-blue200 !{section.header}
+p= section.description 
+div.tips--container
+    div.grid-properties
+        each tip in section.tips
+            div.tip
+                h3.font-weight-bold= tip.header
+                p= tip.subheader
+    div.image
+        img(src=section.tips[0].image alt=section.tips[0].header)

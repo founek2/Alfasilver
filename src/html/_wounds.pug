@@ -1,0 +1,10 @@
+-var section = $i18n.pages.wounds
+h2.font-weight-bold= section.header
+p.mobile-only= section.description.phone
+p.desktop-only= section.description.desktop
+
+div.grid-wounds.grid--wounds
+    each badge in section.badges
+        div.m-badge.text-center
+            img(inline src=badge.image alt=badge.label)
+            p.font-weight-bold= badge.label  

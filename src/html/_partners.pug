@@ -1,0 +1,7 @@
+-var section = $i18n.pages.partners
+h2.color-blue200.font-weight-bold= section.header
+div.partners-img--container
+    each partner in section.partners
+        div.partner--container.nopadding
+            a(href=partner.link)
+                img.img-fluid(src=partner.image alt=partner.image)

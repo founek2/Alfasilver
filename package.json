@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "gulp"
+        "dev": "gulp watch",
+        "build": "gulp"
     },
     "author": "Martin Skalický",
     "license": "ISC",
