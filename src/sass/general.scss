@@ -77,6 +77,11 @@ address {
   width: 50%;
 }
 
+.mobile-col-6{
+  width: 50%;
+}
+
+
 .slider {
   width: 263px;
   position: relative;
@@ -116,6 +121,9 @@ address {
 @media screen and (min-width: 1025px){
   .mobile-only {
     display: none;
+  }
+  .mobile-col-6 {
+    width: 100%;
   }
 } 
 
@@ -170,21 +178,22 @@ address {
   }
 }
 
+.img-label {
+  font-size: 10px;
+  margin: 0;
+}
+
 .alfasilver--container {
   position: relative;
   background-color: white;
     img {
       height: 20em;
-      margin-top: -10em;
-    }
-    .img-label {
-      font-size: 10px;
-      margin: 0;
+      margin-top: -14em;
     }
   
 
   h4 {
-    margin-top: 1.8em;
+    margin-top: -1em;
     padding-left: $sidePadding / 2;
     color: $grey300;
     b {
@@ -304,7 +313,7 @@ address {
   // }
 }
 .partner--container {
-  max-width: 226px;
+  max-width: 268px;
   // width: 50%;
 }
 @media screen and (min-width: 330px){
@@ -352,6 +361,7 @@ footer {
 .alwaysOn {
   font-size: 0.5rem;
   position: fixed;
+  z-index: 100;
   background-color: $grey50;
   color: $grey500;
   top: 75vh;
@@ -456,15 +466,40 @@ $topPadding: $topPadding* 1.3;
   }
   .desktop-col-text {
     width: 66%;
+    // padding-right: 20%;
   }
 
-  .alfasilver--container h4 {
-    padding: 0;
+  .img-label {
+    font-size: 0.8rem;
+  }
+  .alfasilver--container{
+    h4 {
+      padding: 0;
+      margin-top: -3rem;
+      font-size: 1.5rem;
+    }
+
+    // .desktop-col-text { 
+      
+    // }
+
+    h2 {
+      visibility: hidden;
+      margin-top: 2rem;
+    }
+    h5 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
   }
 
   .wounds--container {
     position: relative;
     padding-top: $topPaddingMobile !important;
+
+    .grid-wounds {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
   }
   // 196+75 = 271
   .image--wounds {
@@ -491,16 +526,26 @@ $topPadding: $topPadding* 1.3;
     width: 33.33%;
   }
 
+  $instructionsTop: 4rem;
   .grid--properties {
     flex-direction: row;
+    margin-top: $instructionsTop;
 
     .property {
       max-width: 17.5rem;
       background-color: $grey50;
+      padding: 1.5rem;
     }
     .desktop-col-4:last-child .property{
       float: right;
     }
+    .image--properties {
+      margin-top: -$instructionsTop
+    }
+  }
+
+  .properties--container h2 {
+    padding-bottom: 4rem;
   }
 
   .grid--faq {
@@ -533,6 +578,22 @@ $topPadding: $topPadding* 1.3;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
+  $partner-padding-side: 2rem;
+  .partners-img--container {
+    margin-left: -$partner-padding-side;
+    margin-right: -$partner-padding-side;
+  }
+  .partner--container {
+    padding-left: $partner-padding-side;
+    padding-right: $partner-padding-side;
+    padding-bottom: 1rem;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: none;
+    }
+  }
+
 } 
 
 
@@ -590,5 +651,9 @@ $topPadding: $topPadding *1.2;
   }
   .sidemargin--left {
     margin-left: $sidePadding;
+  }
+
+  .wounds--container .grid-wounds {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   }
 } 

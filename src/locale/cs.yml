@@ -32,7 +32,9 @@ pages:
             - Co si budeme povídat. Pády k životu patří. Předchází většině našich zranění. Odřeninám, šrámům, popáleninám i ranám. Padáme při běhu, chůzi, při jízdě na kole, koloběžce, tříkolce, skatu nebo na inline bruslích. Padáme všichni bez rozdílu. Šikovní, nešikové, malí i velcí.
             - Pády ale nemusí nutně končit v bolestech a v slzách.
             - Pokud máme po ruce sprej Alfasilver, dopadne každý pád dobře.
-        image: images/alfasilverDouble.png
+        image:
+            file: images/alfasilverDouble.png
+            description: Zdravotnický prostředek
     wounds:
         header: Sprej na rány
         description:

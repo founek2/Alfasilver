@@ -3,10 +3,10 @@ div.d-flex
     div.desktop-col-spray 
     div.desktop-col-text
         div.d-flex
-            div.m-col-6.text-center.mobile-only
-                img(id="static-alfasilver" src=section.image alt="Zdravotnický prostředek")
-                p.img-label.text-center Zdravotnický prostředek
-            div.m-col-6
+            div.mobile-col-6.text-center.mobile-only
+                img(id="static-alfasilver" src=section.image.file alt=section.image.description)
+                p.img-label.text-center= section.image.description
+            div.mobile-col-6
                 h4 <b>#{section.subheader}</b> #{section.header}
         h2.margin-bottom-16= section.subheader2
         each text in section.descriptions

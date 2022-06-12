@@ -1,11 +1,11 @@
 -var section = $i18n.pages.wounds
 div.d-flex
     div.desktop-col-spray
-        img.image--wounds(src=$i18n.pages.alfasilver.image)
+        img.image--wounds(src=$i18n.pages.alfasilver.image.file alt=$i18n.pages.alfasilver.image.description)
     div.desktop-col-text
         h2.margin-bottom-16.font-weight-bold= section.header
-        p.mobile-only= section.description.phone
-        p.desktop-only= section.description.desktop
+        p.mobile-only !{section.description.phone}
+        p.desktop-only !{section.description.desktop}
 
         div.grid-wounds.grid--wounds
             each badge in section.badges

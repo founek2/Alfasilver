@@ -39,16 +39,16 @@
             return function(e) {
                 const wasActive = this.classList.contains("active")
             
-                //- for (let f of items) {
-                //-     f.classList.remove("active")
-                //- }
+                for (let f of items) {
+                    f.classList.remove("active") 
+                }
                 if (!wasActive) {
                     this.classList.add("active")
                     if (cb) cb(this)
                 }
-                if (wasActive) {
-                    this.classList.remove("active")
-                }
+                //- if (wasActive) {
+                //-     this.classList.remove("active")
+                //- }
             }
         }
     
@@ -109,7 +109,7 @@
         </nav>
       </div>
       <div class="d-flex">
-        <div class="desktop-col-spray desktop-only-1024"><img class="image--wounds" id="movable-alfasilver" src="images/alfasilverDouble.png"/></div>
+        <div class="desktop-col-spray desktop-only-1024"><img class="image--wounds" id="movable-alfasilver" src="images/alfasilverDouble.png" alt="Zdravotnický prostředek"/></div>
         <div class="desktop-col-text">
           <div class="header">
             <h2>Aby pády dobře</h2>
@@ -132,10 +132,10 @@
         <div class="desktop-col-spray"> </div>
         <div class="desktop-col-text">
           <div class="d-flex">
-            <div class="m-col-6 text-center mobile-only"><img id="static-alfasilver" src="images/alfasilverDouble.png" alt="Zdravotnický prostředek"/>
+            <div class="mobile-col-6 text-center mobile-only"><img id="static-alfasilver" src="images/alfasilverDouble.png" alt="Zdravotnický prostředek"/>
               <p class="img-label text-center">Zdravotnický prostředek</p>
             </div>
-            <div class="m-col-6">
+            <div class="mobile-col-6">
               <h4><b>Alfasilver</b> sprej na rány a odřeniny</h4>
             </div>
           </div>
@@ -149,7 +149,7 @@
     </article>
     <article class="container--margin wounds--container" id="wounds">
       <div class="d-flex">
-        <div class="desktop-col-spray"><img class="image--wounds" src="images/alfasilverDouble.png"/></div>
+        <div class="desktop-col-spray"><img class="image--wounds" src="images/alfasilverDouble.png" alt="Zdravotnický prostředek"/></div>
         <div class="desktop-col-text">
           <h2 class="margin-bottom-16 font-weight-bold">Sprej na rány</h2>
           <p class="mobile-only">Co si budeme povídat. Pády k životu patří. Předchází většině našich zranění. Odřeninám, šrámům, popáleninám i ranám. Padáme při běhu, chůzi, při jízdě na kole, koloběžce, tříkolce,</p>
@@ -230,7 +230,9 @@
             <p>Co rychle přišlo, rychle odejde. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.</p>
           </div>
         </div>
-        <div class="desktop-col-4 desktop-only-1024 image--properties"><img src="images/alfasilverDouble.png"/></div>
+        <div class="desktop-col-4 desktop-only-1024 image--properties"><img src="images/alfasilverDouble.png"/>
+          <p class="img-label desktop-only text-center">Zdravotnický prostředek</p>
+        </div>
         <div class="desktop-col-4">
           <div class="property">
             <h4 class="font-weight-bold">URYCHLUJE HOJENÍ</h4>
@@ -299,13 +301,13 @@
     <article class="container--margin partners--container" id="partners">
       <h2 class="desktop-align-center-1024 margin-bottom-24 color-blue200 font-weight-bold">Kde koupit</h2>
       <div class="partners-img--container">
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/pilulkacz.png" alt="images/pilulkacz.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/drmax.png" alt="images/drmax.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/mojelekarna.png" alt="images/mojelekarna.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/benu.png" alt="images/benu.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/alphega.png" alt="images/alphega.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/magistra.png" alt="images/magistra.png"/></a></div>
-        <div class="partner--container nopadding"><a href="#"><img class="img-fluid" src="images/lekarnacz.png" alt="images/lekarnacz.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/pilulkacz.png" alt="images/pilulkacz.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/drmax.png" alt="images/drmax.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/mojelekarna.png" alt="images/mojelekarna.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/benu.png" alt="images/benu.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/alphega.png" alt="images/alphega.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/magistra.png" alt="images/magistra.png"/></a></div>
+        <div class="partner--container"><a href="#"><img class="img-fluid" src="images/lekarnacz.png" alt="images/lekarnacz.png"/></a></div>
       </div>
     </article>
     <footer id="contact">
