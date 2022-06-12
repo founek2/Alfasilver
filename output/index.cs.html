@@ -77,11 +77,10 @@
         const staticImage = document.querySelector(".wounds--container")
         const offset = movableImage.offsetTop
         const maxTop = staticImage.offsetTop - 200
-        console.log("maxTop", maxTop, staticImage.getBoundingClientRect())
         window.onscroll = function (e) {  
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop
             const target = offset +scrollTop
-            console.log(movableImage.style.top, scrollTop)
+            
             if (target < maxTop) {
             movableImage.style.top = `${offset +scrollTop}px`
             }
