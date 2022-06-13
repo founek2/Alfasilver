@@ -80,8 +80,8 @@ pages:
             - header: Chronické rány
               subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
               descriptions:
-                  - TODO fancy popis<br><br>
-              image: images/bike.png
+                  - TODO fancy popis
+              image: images/bike2.png
     faq:
         header: Na co se NEJČASTĚJI ptáte
         questions:

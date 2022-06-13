@@ -210,7 +210,7 @@ $header-padding-top: 7.2em;
 }
 
 .wounds--container {
-  z-index: 2;
+  // z-index: 2;
   // background-color: $blue200;
   background: transparent radial-gradient(closest-side at 50% 0%, $blue100 0%,  $blue200 100%) 0% 0% no-repeat padding-box;;
   color: white
@@ -251,18 +251,24 @@ $header-padding-top: 7.2em;
   color: black
 }
 
-
 .grid-properties {
   display: flex;
 
   // grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
   flex-direction: column;
 
+
+  .grid-inner {
+    overflow: hidden;
+    transition: height 0.2s linear;
+  }
+  
   .property { 
     position: relative;
     background-color: $grey10;
     padding: $innerPadding;
     margin-bottom: 0.7rem;
+    cursor: pointer;
 
     &:last-child {
       margin-bottom: 0;
@@ -284,7 +290,10 @@ $header-padding-top: 7.2em;
 
   p {
     margin: 0;
-    display: none;
+    // max-height: 0;
+    // overflow-y: hidden;
+    // transition: max-height 0.3s linear;
+    // display: none;
   }
 
   .active {
@@ -295,14 +304,11 @@ $header-padding-top: 7.2em;
     }
     p {
       display: block;
+      // max-height: 300px;
     }
   }
 }
-.grid-properties--active {
-  p {
-    display: block;
-  }
-}
+
 
 .partners-img--container {
   display: flex;

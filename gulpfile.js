@@ -18,6 +18,10 @@ function videoWatch() {
     gulp.watch(['./src/videos/**/*'], videos);
 }
 
+function jsWatch() {
+    gulp.watch(['./src/js/**/*'], js);
+}
+
 function sass() {
     return gulp
         .src('./src/sass/**/*.scss')
@@ -48,6 +52,10 @@ function fonts() {
     return gulp.src(['./src/fonts/**/*']).pipe(gulp.dest('output/css'));
 }
 
+function js() {
+    return gulp.src(['./src/js/**/*']).pipe(gulp.dest('output/js'));
+}
+
 function pug() {
     return gulp
         .src('./src/html/[^_]*.pug')
@@ -64,6 +72,6 @@ function pug() {
         .pipe(gulp.dest('output'));
 }
 
-exports.watch = gulp.parallel(sassWatch, pugWatch, imgWatch, videoWatch);
-exports.build = gulp.parallel(sass, pug, images, videos, fonts);
+exports.watch = gulp.parallel(sassWatch, pugWatch, imgWatch, videoWatch, jsWatch);
+exports.build = gulp.parallel(sass, pug, images, videos, fonts, js);
 exports.default = exports.build;
