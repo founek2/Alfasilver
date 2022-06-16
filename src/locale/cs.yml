@@ -76,44 +76,47 @@ pages:
                   - Sprej řádně protřepejte. Na ránu nastříkejte souvislou vrstvu prášku ze vzdálenosti 20 – 30 cm.
                   - Na ráně zůstane prodyšná vrstva bílého prášku, který přilne na vlhké části rány a chrání ji před množením bakterií. Na suchém okolí prášek nepřilne a je možné jej snadno odstranit.
                   - Drobné, nekrvácivé rány již není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
-              image: images/bike.png
+              image: images/akutni_rany.jpg
             - header: Chronické rány
               subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
               descriptions:
                   - TODO fancy popis
-              image: images/bike2.png
+              image: images/chronicke_rany.jpg
     faq:
         header: Na co se NEJČASTĚJI ptáte
         questions:
             col1:
-                - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK na ráně?
+                - header: ZČERNÁ (ZOXIDUJE) PŘÍPRAVEK NA RÁNĚ?
                   answer: Ne. Ionty stříbra jsou navázány na zeolitový prášek, který chrání stříbro před oxidací. K zabarvení prášku může dojít vlivem absorpce tekutin přijatých z rány.
-                - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
-                  answer: TODO
-            col2:
                 - header: MOHU POUŽÍT DOHROMADY S JINOU DESINFEKCÍ?
-                  answer: TODO
+                  answer: Není potřeba ránu čistit jinou desinfekcí, protože už samotný Alfasilver udržuje ránu bez mikroorganismů. Naopak, nedoporučuje se kombinovat s jakýmikoliv roztoky obsahujícími jód. Stříbro by ztratilo svoji účinnost.
+            col2:
                 - header: OD JAKÉHO VĚKU JE MOŽNÉ PŘÍPRAVEK POUŽÍVAT?
-                  answer: TODO
+                  answer: AlfaSilver nemá žádné věkové omezení. Vzhledem k možnosti nečekaného vnitřního užití dítětem, doporučujeme používat přípravek od 3 let.
+                - header: MOHOU PŘÍPRAVEK POUŽÍVAT I TĚHOTNÉ A KOJÍCÍ ŽENY?
+                  answer: Ano mohou. Kojící ženy by neměly přípravek používat na ragády prsních bradavek.
                 - header: JAK DLOUHO LZE PŘÍPRAVEK UŽÍVAT?
-                  answer: TODO
+                  answer: V případě potřeby (především ošetřování chronických ran) lze AlfaSilver používat 30 po sobě jdoucích dnů. Následně by mělo být používání na 14 dnů přerušeno.
     partners:
         header: Kde koupit
         partners:
             - image: images/pilulkacz.png
-              link: '#'
+              link: 'https://www.pilulka.cz/alfasilver-sprej-50-ml'
             - image: images/drmax.png
-              link: '#'
+              link: 'https://www.drmax.cz/alfasilver'
             - image: images/mojelekarna.png
-              link: '#'
+              link: 'https://eshop.mojelekarna.cz/znacka/alfasilver'
             - image: images/benu.png
-              link: '#'
+              link: 'https://www.benu.cz/alfasilver'
             - image: images/alphega.png
-              link: '#'
+              link: 'http://www.alphega-lekarna.cz/store-locator'
             - image: images/magistra.png
-              link: '#'
+              link: 'https://www.magistra.cz/cs/produkt/alfasilver-sprej-50-ml?sid=689'
             - image: images/lekarnacz.png
-              link: '#'
+              link: 'https://www.lekarna.cz/alfasilver/'
+            - image: images/ave.png
+              link: 'https://www.lekarnaave.cz/alfasilver-sprej-50ml'
+              class: ave
     contact:
         header: Kontakty
         subheader: Sídlo distributora pro ČR
@@ -131,4 +134,7 @@ pages:
             email: czech.pvg@glenmarkpharma.com
             privacy:
                 label: Zásady ochrany osobních údajů
-                link: '#'
+                link: 'assets/Z%C3%A1sady%20zpracov%C3%A1n%C3%AD%20osobn%C3%ADch%20%C3%BAdaj%C5%AF_AlfaSilver_Glenmark%20Pharmaceutica.pdf'
+            conditions:
+                label: Podmínky a pravidla užívání našeho webu
+                link: 'assets/Podm%C3%ADnky%20a%20pravidla%20u%C5%BE%C3%ADv%C3%A1n%C3%AD%20webu_AlfaSilver_Glenmark%20Pharmaceutical.pdf'

@@ -15,10 +15,14 @@ window.onload = function () {
                 if (idx >= sliderTexts.length) idx = 1;
                 changeText(holder, idx++);
                 fadeIn(holder);
-            }, 800);
+            }, 200);
         };
     }
-    setInterval(animate(), 3000);
+    setTimeout(() => {
+        animate();
+
+        setInterval(animate(), 1200);
+    }, 300);
 
     function handleActive(items, cb) {
         return function (e) {
@@ -29,7 +33,7 @@ window.onload = function () {
             } else {
                 expandSection(this);
                 this.classList.add('active');
-                cb(this);
+                if (cb) cb(this);
             }
 
             for (let f of items) {

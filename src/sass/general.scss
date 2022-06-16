@@ -18,6 +18,7 @@ $topPadding: 3.3rem;
 $topPaddingMobile: 3.3rem;
  
 $innerPadding: 2rem;
+$grid-property-spacing: 0.7rem;
 /* GENERAL */ 
 html, body {
   font-family: "DIN Pro", "Lucida Grande", Tahoma, Sans-Serif;
@@ -34,6 +35,11 @@ html, body {
   // background-image: url("../images/logo2.png");
   display: flex;
   align-items: flex-end;
+  background-color: white;
+}
+
+.properties--container {
+  position: relative;
   background-color: white;
 }
 
@@ -99,7 +105,7 @@ address {
     // position: absolute;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.8s linear;
+    transition: opacity 0.2s linear;
   }
   
   .hidden {
@@ -115,6 +121,10 @@ address {
   .desktop-only-1024 {
     display: none;
   }
+  .mobile-grid-spacing {
+    margin-bottom: $property-spacing;
+  }
+  
 }
 
 
@@ -267,7 +277,7 @@ $header-padding-top: 7.2em;
     position: relative;
     background-color: $grey10;
     padding: $innerPadding;
-    margin-bottom: 0.7rem;
+    margin-bottom: $grid-property-spacing;
     cursor: pointer;
 
     &:last-child {
@@ -309,7 +319,6 @@ $header-padding-top: 7.2em;
   }
 }
 
-
 .partners-img--container {
   display: flex;
   flex-wrap: wrap;
@@ -323,6 +332,14 @@ $header-padding-top: 7.2em;
 .partner--container {
   max-width: 268px;
   // width: 50%;
+  // padding-left: $partner-padding-side;
+  // padding-right: $partner-padding-side;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+.ave {
+  width: 49%;
+  margin: 0 auto;
 }
 @media screen and (min-width: 330px){
   .partner--container {
@@ -536,6 +553,8 @@ $topPadding: $topPadding* 1.3;
     display: block;
   }
   .desktop-col-4 {
+    display: flex;
+    flex-direction: column;
     width: 33.33%;
   }
 
@@ -543,17 +562,21 @@ $topPadding: $topPadding* 1.3;
   .grid--properties {
     flex-direction: row;
     margin-top: $instructionsTop;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
 
     .property {
       max-width: 17.5rem;
       background-color: $grey50;
       padding: 1.5rem;
     }
-    .desktop-col-4:last-child .property{
-      float: right;
+    .desktop-col-4:last-child{
+      align-items: end;
     }
     .image--properties {
-      margin-top: -$instructionsTop
+      margin-top: -$instructionsTop;
+      align-items: center;
     }
   }
 

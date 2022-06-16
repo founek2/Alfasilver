@@ -4,4 +4,5 @@ div.partners-img--container
     each partner in section.partners
         div.partner--container
             a(href=partner.link)
-                img.img-fluid(src=partner.image alt=partner.image)
+                div(class=partner.class)
+                    img.img-fluid(src=partner.image alt=partner.image)
