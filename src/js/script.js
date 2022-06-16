@@ -59,6 +59,7 @@ window.onload = function () {
         }
         const active = document.querySelectorAll('.grid-properties--collapse .active');
         for (const el of active) {
+            resetSectionHeight(el);
             setSectionHeight(el);
         }
     }
