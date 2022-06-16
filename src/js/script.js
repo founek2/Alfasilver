@@ -46,19 +46,25 @@ window.onload = function () {
     }
 
     /* -------- prepase collapsable grids -------- */
-    const notActive = document.querySelectorAll('.grid-properties--collapse .property:not(.active)');
-    for (const el of notActive) {
-        collapseSection(el);
-    }
-    const active = document.querySelectorAll('.grid-properties--collapse .active');
-    for (const el of active) {
-        setSectionHeight(el);
-    }
-
     const faqs = document.querySelectorAll('.faq--container > .grid-properties  .property');
     for (let f of faqs) {
         f.addEventListener('click', handleActive(faqs));
     }
+
+    function prepareCollapsableGrids(e) {
+        const notActive = document.querySelectorAll('.grid-properties--collapse .property:not(.active)');
+        for (const el of notActive) {
+            resetSectionHeight(el);
+            collapseSection(el);
+        }
+        const active = document.querySelectorAll('.grid-properties--collapse .active');
+        for (const el of active) {
+            setSectionHeight(el);
+        }
+    }
+
+    prepareCollapsableGrids();
+    window.addEventListener('resize', prepareCollapsableGrids);
 
     /* -------- instructions image -------- */
     const imagesInstructions = document.querySelectorAll('.image-instructions > img');
@@ -112,8 +118,14 @@ function fadeIn(el) {
 /*  -------------- COLAPSE -------------- */
 
 function setSectionHeight(element) {
+    console.log(element.clientHeight);
     element = element.children[0];
     element.style.height = `${element.clientHeight}px`;
+}
+
+function resetSectionHeight(element) {
+    element = element.children[0];
+    element.style.height = 'auto';
 }
 
 function collapseSection(element) {
