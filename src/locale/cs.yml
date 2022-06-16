@@ -31,7 +31,7 @@ pages:
         descriptions:
             - Co si budeme povídat. Pády k životu patří. Předchází většině našich zranění. Odřeninám, šrámům, popáleninám i ranám. Padáme při běhu, chůzi, při jízdě na kole, koloběžce, tříkolce, skatu nebo na inline bruslích. Padáme všichni bez rozdílu. Šikovní, nešikové, malí i velcí.
             - Pády ale nemusí nutně končit v bolestech a v slzách.
-            - Pokud máme po ruce sprej Alfasilver, dopadne každý pád dobře.
+            - Pokud máme po ruce sprej Alfasilver, dopadne většina pádů dobře.
         image:
             file: images/alfasilverDouble.png
             description: Zdravotnický prostředek
@@ -59,9 +59,9 @@ pages:
                 - header: NEPÁLÍ A NEŠTÍPE
                   description: Osušte slzičky. Ošetření Alfasilverem nebolí. Aplikace je mírně chladivá.
                 - header: CHRÁNÍ PŘED INFEKCÍ
-                  description: Co rychle přišlo, rychle odejde. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.
+                  description: Co rychle přišlo, musí se ošetřit. Antimikrobiální vlastnosti ionizovaného stříbra zabrání množení bakterií.
             col2:
-                - header: URYCHLUJE HOJENÍ
+                - header: Pomáhá hojení rány
                   description: Nečekejte do svatby. Chladivý sprej vytváří antiseptické a vlhké prostředí pro rychlejší hojení.
                 - header: MŮŽE NAHRADIT NÁPLAST
                   description: Na co náplasti nebo obvaz?! Mikronizovaný zeolitový prášek přilne k ráně a vytvoří na ni ochrannou vrstvu.
@@ -78,9 +78,12 @@ pages:
                   - Drobné, nekrvácivé rány již není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
               image: images/akutni_rany.jpg
             - header: Chronické rány
-              subheader: BÉRCOVÉ VŘEDY, PROLEŽENINY, ŠPATNĚ SE HOJÍCÍ RÁNY A DALŠÍ
+              subheader: PROLEŽENINY
               descriptions:
-                  - TODO fancy popis
+                  - Aplikujte Alfasilver při každém převazu nebo čištění. Přípravek je možné nanášet i do hlubších ran.
+                  - Před každým ošetřením ránu vyčistěte vodou nebo fyziologickým roztokem od viditelných nečistot.
+                  - Sprej řádně protřepejte. Na ránu nastříkejte souvislou vrstvu Alfasilveru ze vzdálenosti 20-30 cm.
+                  - Drobné, nekrvácivé defekty není nutné zakrývat. Hlubší, krvácivé či secernující rány a rány v oblastech zvýšeného namáhání zakryjte nepřilnavým krytím.
               image: images/chronicke_rany.jpg
     faq:
         header: Na co se NEJČASTĚJI ptáte
