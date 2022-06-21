@@ -1,0 +1,140 @@
+title: 'Alfasilver sprej na rány a odřeniny'
+navigation:
+    - label: Na každý pád
+      href: '#alfasilver'
+    - label: Sprej na rany
+      href: '#wounds'
+    - label: Prečo mať poruke
+      href: '#properties'
+    - label: Návod na použitie
+      href: '#instructions'
+    - label: Kde kúpiť
+      href: '#partners'
+    - label: Kontakty
+      href: '#contact'
+alwaysOn: Alfasilver je zdravotnícka pomôcka určená na ošetrenie rán, odrenín, popálenín menšieho rozsahu, kožných poranení. Dôkladne si preštudujte návod na použitie, účinky a spôsob použitia konzultujte s lekárom alebo lekárnikom.
+pages:
+    introduction:
+        header: Aby pády dobre
+        header2: dopadli
+        properties:
+            - Nepáli
+            - Neštípe
+            - Kryje rany
+            - Chráni pred infekciou
+        image: images/bike.png
+        video: alfasilver-20s.mp4
+    alfasilver:
+        header: Sprej na rany a odreniny
+        subheader: Alfasilver
+        subheader2: Na každý pád
+        descriptions:
+            - Čo si budeme hovoriť. Pády k životu patria. Predchádzajú väčšine našich zranení. Odreninám, škrabancom, popáleninám aj ranám. Padáme pri behu, chôdzi, jazde na bicykli, kolobežke, trojkolke, skejte alebo inline korčuliach. Padáme všetci bez rozdielu. Šikovní, nemehlá, malí aj veľkí.
+            - Pády sa však nemusia končiť v bolestiach a slzách.
+            - Ak máme poruke sprej Alfasilver, dopadne väčšina pádov dobre.
+        image:
+            file: images/SK-Alfasilver_double.png
+            description: Zdravotnický prostředek
+    wounds:
+        header: Sprej na rany
+        description:
+            desktop: Bezbolestné ošetrenie akútnych a chronických rán. ALFASILVER obsahuje ionizované striebro, ktoré vďaka antimikrobiálnym účinkom zbavuje ranu infekcie, a minerálny prášok zeolit, ktorý má mierne hemostatické účinky a dokáže zastaviť krvácanie z rany.
+        badges:
+            - image: images/star.svg
+              label: Na odreniny
+            - image: images/fire.svg
+              label: Na popáleniny
+            - image: images/knife.svg
+              label: Na rezné rany
+            - image: images/target.svg
+              label: Na chronické rany
+    properties:
+        header: Prečo mať poruke?
+        image:
+            - file: images/SK-Alfasilver_double.png
+              description: Zdravotnický prostředek
+        columns:
+            col1:
+                - header: Nepáli a neštípe
+                  description: Osušte slzičky. Ošetrenie Alfasilverom nebolí. Aplikácia je mierne chladivá.
+                - header: Chráni pred infekciou
+                  description: Čo rýchlo prišlo, je potrebné ošetriť. Antimikrobiálne vlastnosti ionizovaného striebra zabránia množeniu baktérií.
+
+            col2:
+                - header: Pomáha hojiť ranu
+                  description: Nečakajte do svadby. Chladivý sprej vytvára antiseptické a vlhké prostredie na rýchlejšie hojenie.
+                - header: Môže nahradiť náplasť
+                  description: Na čo náplasti alebo obväz?! Mikronizovaný zeolitový prášok priľne k ranea vytvorí na nej ochrannú vrstvu.
+
+    instructions:
+        header: Ako postupovať pri&nbsp;ošetrení rany
+        tips:
+            - header: AKÚTNE RANY
+              subheader: odreniny, popáleniny, škrabance a rezné rany
+              descriptions:
+                  - Pred ošetrením ranu očistite od viditeľných nečistôt (vodou alebo fyziologickým roztokom).
+                  - Sprej riadne pretrepte. Na ranu nastriekajte zo vzdialenosti 20 cm – 30 cm súvislú vrstvu prášku.
+                  - Na rane zostane priedušná vrstva bieleho prášku, ktorý priľne na vlhké časti rany a chráni ju pred množením baktérií. Na suchom okolí prášok nepriľne a dá sa ľahko odstrániť.
+                  - Malé, nekrvácavé rany už nie je potrebné zakrývať. Hlbšie, krvácavé či secernujúce rany a rany v oblastiach zvýšeného namáhania zakryte nepriľnavým krytím.
+              image: images/akutni_rany.jpg
+            - header: CHRONICKÉ RANY
+              subheader: preležaniny
+              descriptions:
+                  - Aplikujte Alfasilver pri každom preväze alebo čistení.
+                  - Prípravok je možné nanášať aj do hlbších rán.
+                  - Pred každým ošetrením ranu vyčistite vodou alebo fyziologickým roztokom od viditeľných nečistôt.
+                  - Sprej riadne pretrepte. Na ranu nastriekajte súvislú vrstvu Alfasilveru zo vzdialenosti 20 cm – 30 cm.
+                  - Malé, nekrvácavé defekty nie je potrebné zakrývať. Hlbšie, krvácavé či secernujúce rany a rany v oblastiach zvýšeného namáhania zakryte nepriľnavým krytím.
+              image: images/chronicke_rany.jpg
+    faq:
+        header: NAJČASTEJŠIE OTÁZKY K PRODUKTU ALFASILVER SPREJ
+        questions:
+            col1:
+                - header: SČERNÁ (ZOXIDUJE) PRÍPRAVOK NA RANE?
+                  answer: Nie. Ióny striebra sú naviazané na zeolitový prášok, ktorý chráni striebro pred oxidáciou. Prášok sa môže zafarbiť vplyvom absorpcie tekutín prijatých z rany.
+                - header: MÔŽEM POUŽIŤ SPOLU S INOU DEZINFEKCIOU?
+                  answer: Ranu netreba čistiť inou dezinfekciou, pretože už samotný Alfasilver udržiava ranu bez mikroorganizmov. Naopak, neodporúča sa kombinovať so žiadnymi roztokmi obsahujúcimi jód. Striebro by stratilo účinnosť.
+            col2:
+                - header: OD AKÉHO VEKU JE MOŽNÉ PRÍPRAVOK POUŽÍVAŤ?
+                  answer: AlfaSilver nemá žiadne vekové obmedzenie. S cieľom zabrániť neúmyselnému vnútornému užitiu dieťaťom odporúčame prípravok používať od 3 rokov.
+                - header: MÔŽU PRÍPRAVOK POUŽÍVAŤ AJ TEHOTNÉ A DOJČIACE ŽENY?
+                  answer: Áno, môžu. Dojčiace ženy by nemali prípravok používať na ragády prsných bradaviek.
+                - header: AKO DLHO JE MOŽNÉ PRÍPRAVOK POUŽÍVAŤ?
+                  answer: V prípade potreby (predovšetkým na ošetrovanie chronických rán) je možné AlfaSilver používať 30 po sebe nasledujúcich dní. Následne by sa malo používanie na 14 dní prerušiť.
+    partners:
+        header: Kde kúpiť
+        partners:
+            - image: images/pilulka_sk.png
+              link: 'https://www.pilulka.sk/alfasilver-125ml'
+            - image: images/drmax_sk.png
+              link: 'https://www.drmax.sk/alfasilver-a96020'
+            - image: images/mojelekarna_sk.png
+              link: 'https://www.mojalekaren.sk/alfasilver-sprej-125ml/'
+            - image: images/benu_sk.png
+              link: 'https://www.benulekaren.sk/alfasilver'
+            - image: images/vase_lekaren_sk.png
+              link: 'https://www.vasalekaren.sk/alfasilver-p4023'
+            - image: images/etabletka_sk.png
+              link: 'https://etabletka.sk/obchod/alfasilver/'
+              # class: ave
+    contact:
+        header: Kontakty
+        subheader: Sídlo distribútora pre SR
+        description: Alfasilver je zdravotnícka pomôcka určená na ošetrenie rán, odrenín, popálenín menšieho rozsahu, kožných poranení. Dôkladne si preštudujte návod na použitie, účinky a spôsob použitia konzultujte s lekárom alebo lekárnikom.
+        aboutUs:
+            company: Glenmark PHARMACEUTICALS SK, s.r.o.
+            place: City Tower (3. podlaží)
+            address: Tomášikova 64, 831 04 Bratislava 3
+            phone: +421 2 20 255 041
+            email: info-sk@glenmarkpharma.com
+            # website: www.glenmarkpharma.cz
+        contactUs:
+            description: V prípade hlásenia nežiaducich účinkov zdravotníckej pomôcky ALFASILVER nás neváhajte, prosím, kontaktovať
+            phone: +420 227 629 511
+            email: czech.pvg@glenmarkpharma.com
+            privacy:
+                label: Zásady spracovania osobných údajov
+                link: 'assets/Glenmark_Privacy-Policy_SK.PDF'
+            # conditions:
+            #     label: Podmínky a pravidla užívání našeho webu
+            #     link: 'assets/Podm%C3%ADnky%20a%20pravidla%20u%C5%BE%C3%ADv%C3%A1n%C3%AD%20webu_AlfaSilver_Glenmark%20Pharmaceutical.pdf'

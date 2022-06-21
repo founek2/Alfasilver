@@ -89,7 +89,7 @@ address {
 
 
 .slider {
-  width: 263px;
+  width: 277px;
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -336,6 +336,10 @@ $header-padding-top: 7.2em;
   // padding-right: $partner-padding-side;
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ave {
   width: 49%;

@@ -18,8 +18,9 @@ div
         br
         = 'E-mail: '
         a(href="mailto:"+section.aboutUs.email)= section.aboutUs.email
-        br
-        a(href="http://" +section.aboutUs.website)= section.aboutUs.website
+        if section.aboutUs.website
+            br
+            a(href="http://" +section.aboutUs.website)= section.aboutUs.website
     br
 div.contact-us
     p= section.contactUs.description + ":"
@@ -31,5 +32,6 @@ div.contact-us
     br
     br
     a.underline(href=section.contactUs.privacy.link target="_blank")=section.contactUs.privacy.label
-    br
-    a.underline(href=section.contactUs.conditions.link target="_blank")=section.contactUs.conditions.label
+    if section.contactUs.conditions
+        br
+        a.underline(href=section.contactUs.conditions.link target="_blank")=section.contactUs.conditions.label
