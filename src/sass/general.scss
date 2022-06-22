@@ -113,6 +113,41 @@ address {
   }
 }
 
+.cookie {
+  position: fixed;
+  bottom: 0;
+  background-color: $grey50;
+  padding: 1.3rem;
+  z-index: 110;
+  opacity: 0.9;
+  max-width: 40rem;
+  h4 {
+    text-transform: none;
+  }
+  p {
+    margin: 0;
+  }
+
+  button {
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+  }
+  .actions {
+    margin-top: 1rem;
+
+  }
+  .accept {
+    background-color: $blue100;
+    margin-right: 1rem;
+    color: white;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
 
 @media screen and (max-width: 1024px){
   p, address {

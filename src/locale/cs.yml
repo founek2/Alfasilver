@@ -13,6 +13,14 @@ navigation:
     - label: Kontakt
       href: '#contact'
 alwaysOn: Alfasilver je zdravotnický prostředek určený k&nbsp;ošetření ran, odřenin, popálenin menšího rozsahu, kožních poranění. Pečlivě prostudujte návod k použití, účinky a způsob použití konzultujte s lékařem nebo lékárníkem.
+cookie:
+    header: Tyto webové stránky používají soubory cookie
+    description: Tyto webové stránky používají soubory cookie ke zlepšení uživatelského zážitku. Pro účely našich statistik a také pro lepší cílení reklamy nám prosím dejte váš souhlas.
+    moreInfo:
+        label: Více informací
+        link: assets/Z%C3%A1sady_zpracov%C3%A1n%C3%AD_osobn%C3%ADch_%C3%BAdaj%C5%AF_AlfaSilver_Glenmark_Pharmaceutica.pdf
+    acceptText: 'Přijmout'
+    rejectText: 'Odmítnout'
 pages:
     introduction:
         header: Aby pády dobře

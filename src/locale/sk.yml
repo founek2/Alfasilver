@@ -13,6 +13,14 @@ navigation:
     - label: Kontakty
       href: '#contact'
 alwaysOn: Alfasilver je zdravotnícka pomôcka určená na ošetrenie rán, odrenín, popálenín menšieho rozsahu, kožných poranení. Dôkladne si preštudujte návod na použitie, účinky a spôsob použitia konzultujte s lekárom alebo lekárnikom.
+cookie:
+    header: Tieto webové stránky používajú súbory cookie.
+    description: Tieto webové stránky používajú súbory cookie na zlepšenie užívateľského zážitku. Na účely našich štatistík a tiež na lepšie zacielenie reklamy nám prosím dajte váš súhlas.
+    moreInfo:
+        label: Viac informácií
+        link: assets/Glenmark-EU-Cookie-Policy-sk.pdf
+    acceptText: 'Prijať'
+    rejectText: 'Odmietnuť'
 pages:
     introduction:
         header: Aby pády dobre

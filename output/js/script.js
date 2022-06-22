@@ -45,6 +45,34 @@ window.onload = function () {
         };
     }
 
+    /* Cookie */
+    const COOKIE_KEY = 'cookie';
+    function hideCookieDialog() {
+        document.querySelector('.cookie').style.display = 'none';
+    }
+
+    const previosCookieAction = JSON.parse(localStorage.getItem(COOKIE_KEY) || '{}');
+
+    if (previosCookieAction.action === 'allowed') {
+        hideCookieDialog();
+        runGTM();
+    } else if (previosCookieAction.action === 'rejected') {
+        hideCookieDialog();
+    }
+
+    const acceptButton = document.querySelector('.actions .accept');
+    acceptButton.addEventListener('click', function (e) {
+        hideCookieDialog();
+        runGTM();
+        localStorage.setItem(COOKIE_KEY, JSON.stringify({ action: 'allowed', time: new Date() }));
+    });
+
+    const rejectButton = document.querySelector('.actions .reject');
+    rejectButton.addEventListener('click', function (e) {
+        hideCookieDialog();
+        localStorage.setItem(COOKIE_KEY, JSON.stringify({ action: 'rejected', time: new Date() }));
+    });
+
     /* -------- prepase collapsable grids -------- */
     const faqs = document.querySelectorAll('.faq--container > .grid-properties  .property');
     for (let f of faqs) {
@@ -119,7 +147,6 @@ function fadeIn(el) {
 /*  -------------- COLAPSE -------------- */
 
 function setSectionHeight(element) {
-    console.log(element.clientHeight);
     element = element.children[0];
     element.style.height = `${element.clientHeight}px`;
 }
