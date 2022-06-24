@@ -13,6 +13,12 @@ navigation:
     - label: Kontakt
       href: '#contact'
 alwaysOn: Alfasilver je zdravotnický prostředek určený k&nbsp;ošetření ran, odřenin, popálenin menšího rozsahu, kožních poranění. Pečlivě prostudujte návod k použití, účinky a způsob použití konzultujte s lékařem nebo lékárníkem.
+gtm: |
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5CX38LG');
 cookie:
     header: Tyto webové stránky používají soubory cookie
     description: Tyto webové stránky používají soubory cookie ke zlepšení uživatelského zážitku. Pro účely našich statistik a také pro lepší cílení reklamy nám prosím dejte váš souhlas.

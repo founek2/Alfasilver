@@ -8,13 +8,7 @@ html(lang="cs")
     link(href="css/general.css" rel="stylesheet")
     <link rel="icon apple-touch-ico" type="image/png" href="images/logo.png"/>
 
-    script.
-        function runGTM(){ 
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TQXZT6H');}
+    script= $i18n.gtm
 
     <script src="js/script.js">
     </script>
@@ -46,15 +40,15 @@ body
             div.container--margin.contacts--container
                 include _contact.pug
     div.alwaysOn !{$i18n.alwaysOn}
-    div.cookie 
-        div
-            h4= $i18n.cookie.header
-            = $i18n.cookie.description + " "
-            a(href=$i18n.cookie.moreInfo.link)
-                = $i18n.cookie.moreInfo.label
-        div.actions
-            button.accept=  $i18n.cookie.acceptText
-            button.reject=  $i18n.cookie.rejectText
+    //- div.cookie 
+    //-     div
+    //-         h4= $i18n.cookie.header
+    //-         = $i18n.cookie.description + " "
+    //-         a(href=$i18n.cookie.moreInfo.link)
+    //-             = $i18n.cookie.moreInfo.label
+    //-     div.actions
+    //-         button.accept=  $i18n.cookie.acceptText
+    //-         button.reject=  $i18n.cookie.rejectText
 
     //- div.scrollOver
     //- footer(class="contact")
